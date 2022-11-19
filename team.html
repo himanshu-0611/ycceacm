@@ -1,147 +1,549 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <head>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,
+      <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+      <meta charset="utf-8" />
+      <meta
+        name="viewport"
+        content="width=device-width,
 				initial-scale=1"
-    />
+      />
 
-    <!--=============== REMIX ICONS ===============-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+      <!--=============== REMIX ICONS ===============-->
+      <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+        rel="stylesheet"
+      />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
-      rel="stylesheet"
-    />
-</head>
-<body>
-    <section id="navbar">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="public/image/ACM Logo Final.png" class="nav-img" alt="" />
-            YCCE-ACM
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="events.html">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Achievement.html">Achievements</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="team.html">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#social">Contact Us</a>
-              </li>
-            </ul>
+      <!-- Bootstrap CSS -->
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+        crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="style.css" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="team_style.css" />
+      <style></style>
+    </head>
+    <body>
+      <section id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="public/image/ACM Logo Final.png"
+                class="nav-img"
+                alt=""
+              />
+              YCCE-ACM
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Achievement.html">Achievements</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#social">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      
+
+      <!-- ***************************************************************************
+    ***************************************************************************
+    *************************************************************************** -->
+
+      <div class="responsive-container-block outer-container">
+        <!-- HOD's seciton -->
+        <div class="responsive-container-block inner-container">
+          <p class="text-blk section-head-text">Meet Our Faculties</p>
+          <!-- <p class="text-blk section-subhead-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p> -->
+          <div class="responsive-container-block">
+            <div
+              class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container"
+            >
+              <div class="team-card">
+                <div class="img-wrapper">
+                  <img
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
+                    class="team-img"
+                  />
+                </div>
+                <p class="text-blk name">Dr Rakhi Wajgi</p>
+                <p class="text-blk position">HoD, Computer Technology Dept</p>
+                <div class="social-media-links">
+                  <a href="http://www.twitter.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
+                  /></a>
+                  <a href="http://www.linkedin.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container"
+            >
+              <div class="team-card">
+                <div class="img-wrapper">
+                  <img
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png"
+                    class="team-img"
+                  />
+                </div>
+                <p class="text-blk name">Dr Lalit Damahe</p>
+                <p class="text-blk position">
+                  HoD, Computer Science & Engineering Dept
+                </p>
+                <div class="social-media-links">
+                  <a href="http://www.twitter.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
+                  /></a>
+                  <a href="http://www.linkedin.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-    </section>
 
-      <section id="social">
-      <h1 class="text-center">Get In Touch</h1>
-      <div class="d-grid gap-2 d-md-flex justify-content-center">
-        <div class="row align-items-center" id="social-row">
-          <div class="col-md-4 social-col">
-            <a href="" target="_blank"
-              ><img
-                class="img-responsive rounded mx-auto d-block"
-                src="public/icon/instagram-line.png"
-                alt=""
-            /></a>
+        <!-- Co ordinator section -->
+        <div class="responsive-container-block inner-container">
+          <div class="responsive-container-block">
+            <div
+              class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container"
+            >
+              <div class="team-card">
+                <div class="img-wrapper">
+                  <img
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
+                    class="team-img"
+                  />
+                </div>
+                <p class="text-blk name">Supriya Thombre</p>
+                <p class="text-blk position">CT Faculty Co-ordinator</p>
+                <div class="social-media-links">
+                  <a href="http://www.twitter.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
+                  /></a>
+                  <a href="http://www.linkedin.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container"
+            >
+              <div class="team-card">
+                <div class="img-wrapper">
+                  <img
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png"
+                    class="team-img"
+                  />
+                </div>
+                <p class="text-blk name">Pratibha Waghle</p>
+                <p class="text-blk position">CSE Faculty Co-ordinator</p>
+                <div class="social-media-links">
+                  <a href="http://www.twitter.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
+                  /></a>
+                  <a href="http://www.facebook.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4 social-col">
-            <a href="" target="_blank"
-              ><img
-                class="img-responsive rounded mx-auto d-block"
-                src="public/icon/twitter-line.png"
-                alt=""
-            /></a>
+        </div>
+
+        <!-- Core team -->
+        <div class="responsive-container-block inner-container">
+          <p class="text-blk section-head-text">ACM-YCCE CORE TEAM</p>
+          <!-- <p class="text-blk section-subhead-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p> -->
+          <div class="responsive-container-block">
+            <div
+              class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container"
+            >
+              <div class="team-card">
+                <div class="img-wrapper">
+                  <img
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
+                    class="team-img"
+                  />
+                </div>
+                <p class="text-blk name">Sakshi Kokardekar</p>
+                <p class="text-blk position">Chairperson</p>
+                <div class="social-media-links">
+                  <a href="http://www.twitter.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
+                  /></a>
+                  <a href="http://www.linkedin.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container"
+            >
+              <div class="team-card">
+                <div class="img-wrapper">
+                  <img
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
+                    class="team-img"
+                  />
+                </div>
+                <p class="text-blk name">Sudhanshu Nerkar</p>
+                <p class="text-blk position">Vice-Chairperson</p>
+                <div class="social-media-links">
+                  <a href="http://www.twitter.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
+                  /></a>
+                  <a href="http://www.linkedin.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container"
+            >
+              <div class="team-card">
+                <div class="img-wrapper">
+                  <img
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
+                    class="team-img"
+                  />
+                </div>
+                <p class="text-blk name">Adwait Tikekar</p>
+                <p class="text-blk position">Treasurer</p>
+                <div class="social-media-links">
+                  <a href="http://www.twitter.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
+                  /></a>
+                  <a href="http://www.linkedin.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container"
+            >
+              <div class="team-card">
+                <div class="img-wrapper">
+                  <img
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png"
+                    class="team-img"
+                  />
+                </div>
+                <p class="text-blk name">Gunjan Khonde</p>
+                <p class="text-blk position">Secretary</p>
+                <div class="social-media-links">
+                  <a href="http://www.twitter.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
+                  /></a>
+                  <a href="http://www.linkedin.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4 social-col">
-            <a href="" target="_blank"
-              ><img
-                class="img-responsive rounded mx-auto d-block"
-                src="public/icon/linkedin-box-line.png"
-                alt=""
-            /></a>
+        </div>
+        <!-- CT -->
+        <div class="responsive-container-block inner-container">
+          <p class="text-blk section-head-text">CT ACM Representatives</p>
+          <!-- <p class="text-blk section-subhead-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p> -->
+          <div class="responsive-container-block">
+            <div
+              class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container"
+            >
+              <div class="team-card">
+                <div class="img-wrapper">
+                  <img
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
+                    class="team-img"
+                  />
+                </div>
+                <p class="text-blk name">Sakshi Kokardekar</p>
+                <p class="text-blk position">Chairperson</p>
+                <div class="social-media-links">
+                  <a href="http://www.twitter.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
+                  /></a>
+                  <a href="http://www.linkedin.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container"
+            >
+              <div class="team-card">
+                <div class="img-wrapper">
+                  <img
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
+                    class="team-img"
+                  />
+                </div>
+                <p class="text-blk name">Himanshu Agarkar</p>
+                <p class="text-blk position">Vice-Chairperson</p>
+                <div class="social-media-links">
+                  <a href="http://www.twitter.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
+                  /></a>
+                  <a href="http://www.linkedin.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container"
+            >
+              <div class="team-card">
+                <div class="img-wrapper">
+                  <img
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png"
+                    class="team-img"
+                  />
+                </div>
+                <p class="text-blk name">Nikhil Tamrakar</p>
+                <p class="text-blk position">Secretary</p>
+                <div class="social-media-links">
+                  <a href="http://www.twitter.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
+                  /></a>
+                  <a href="http://www.linkedin.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
           </div>
-          
+        </div>
+        <!-- CSE -->
+        <div class="responsive-container-block inner-container">
+          <p class="text-blk section-head-text">
+            CSE ACM Representatives
+            <!-- </p>
+            <p class="text-blk section-subhead-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p> -->
+          </p>
+
+          <div class="responsive-container-block">
+            <div
+              class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container"
+            >
+              <div class="team-card">
+                <div class="img-wrapper">
+                  <img
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
+                    class="team-img"
+                  />
+                </div>
+                <p class="text-blk name">Sudhanshu Nerkar</p>
+                <p class="text-blk position">Chairperson</p>
+                <div class="social-media-links">
+                  <a href="http://www.twitter.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
+                  /></a>
+                  <a href="http://www.linkedin.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container"
+            >
+              <div class="team-card">
+                <div class="img-wrapper">
+                  <img
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
+                    class="team-img"
+                  />
+                </div>
+                <p class="text-blk name">Jay Shende</p>
+                <p class="text-blk position">Secretary</p>
+                <div class="social-media-links">
+                  <a href="http://www.twitter.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
+                  /></a>
+                  <a href="http://www.linkedin.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container"
+            >
+              <div class="team-card">
+                <div class="img-wrapper">
+                  <img
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png"
+                    class="team-img"
+                  />
+                </div>
+                <p class="text-blk name">Adwait Tikekar</p>
+                <p class="text-blk position">Treasurer</p>
+                <div class="social-media-links">
+                  <a href="http://www.twitter.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
+                  /></a>
+                  <a href="http://www.linkedin.com/" target="_blank"
+                    ><img
+                      src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
 
-    <!-- footer -->
-    <section id="footer">
-      <section id="banner">
-        <div class="container-fluid" id="banner-container">
-          <div class="row" id="banner-row">
-            <div class="col-md-6" id="footer-col1">
-              <h3>My Website</h3>
-
-              <p>
-                At XYZ we believe that customers should always get easy-to-use,
-                best in the kind and fast services.xyz has achieved standards
-                which helps customer to achieve satisfaction and realize value
-                for their hard earned money.
-              </p>
+      <!-- social -->
+      <section id="social">
+        <h1 class="text-center">Get In Touch</h1>
+        <div class="d-grid gap-2 d-md-flex justify-content-center">
+          <div class="row align-items-center" id="social-row">
+            <div class="col-md-4 social-col">
+              <a href="" target="_blank"
+                ><img
+                  class="img-responsive rounded mx-auto d-block"
+                  src="public/icon/instagram-line.png"
+                  alt=""
+              /></a>
             </div>
-            <div class="col-md-6" id="footer-col2">
-              <h3>Contact Us</h3>
-
-              <p>Call Us- 1800-121-6532</p>
-
-              <p>Email Us- support@xyz.com</p>
+            <div class="col-md-4 social-col">
+              <a href="" target="_blank"
+                ><img
+                  class="img-responsive rounded mx-auto d-block"
+                  src="public/icon/twitter-line.png"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-md-4 social-col">
+              <a href="" target="_blank"
+                ><img
+                  class="img-responsive rounded mx-auto d-block"
+                  src="public/icon/linkedin-box-line.png"
+                  alt=""
+              /></a>
             </div>
           </div>
         </div>
       </section>
-    </section>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+      <!-- footer -->
+      <section id="footer">
+        <section id="banner">
+          <div class="container-fluid" id="banner-container">
+            <div class="row" id="banner-row">
+              <div class="col-md-6" id="footer-col1">
+                <h3>My Website</h3>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
-</body>
+                <p>
+                  At XYZ we believe that customers should always get
+                  easy-to-use, best in the kind and fast services.xyz has
+                  achieved standards which helps customer to achieve
+                  satisfaction and realize value for their hard earned money.
+                </p>
+              </div>
+              <div class="col-md-6" id="footer-col2">
+                <h3>Contact Us</h3>
+
+                <p>Call Us- 1800-121-6532</p>
+
+                <p>Email Us- support@xyz.com</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Optional JavaScript; choose one of the two! -->
+
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </head>
 </html>
