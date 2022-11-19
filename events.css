@@ -1,0 +1,291 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* navbar */
+
+.navbar-nav {
+	margin-right: 0 !important;
+	padding-right: 100px;
+}
+
+.navbar {
+	background-color: #0a193d;
+	color: white !important;
+}
+
+.nav-item a {
+	color: white !important;
+}
+
+.nav-item {
+	padding-left: 2px;
+}
+
+.navbar-brand {
+	color: white !important;
+	padding-left: 100px;
+}
+
+#navbar button {
+	color: white !important;
+}
+
+.nav-img {
+	height: 80px;
+}
+
+/* banner */
+
+#banner-container {
+	background-color: #0a193d;
+	color: white !important;
+	padding-top: 60px;
+	padding-bottom: 80px;
+
+}
+
+#banner-row img {
+	max-width: 70%;
+	height: 300px;
+	display: block;
+	padding-left: 30px;
+}
+
+#banner-row h3,
+p {
+	padding-left: 20px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+#banner-row a {
+	background-color: white !important;
+	color: black !important;
+	border: none;
+	margin-left: 20px;
+	margin-top: 20px;
+
+}
+
+#banner-col {
+	padding-left: 20px;
+}
+
+/* service */
+#service {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+#service h1 {
+	padding-bottom: 70px;
+}
+
+.i1 {
+	border-radius: 50%;
+}
+
+/* social */
+
+#social {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+#social h1 {
+	padding-bottom: 70px;
+}
+
+.social-col a:hover img {
+	transform: translateY(-10px);
+}
+
+#social-row {
+	flex-direction: row;
+}
+
+
+
+/* footer */
+
+.mb-3 {
+	padding-top: 10px;
+}
+
+
+/* media */
+@media only screen and (max-width: 987px) {
+	.navbar-brand {
+		padding-left: 0px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#banner-row img {
+		padding-top: 20px;
+	}
+
+	.social-col {
+		width: 33%;
+	}
+
+}
+
+
+.row1 {
+	display: -ms-flexbox;
+	/* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap;
+	/* IE10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column1 {
+	-ms-flex: 25%;
+	/* IE10 */
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+}
+
+.column1 img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+	.column1 {
+		-ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.column1 {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+/* comupfest */
+
+/* .container-fluid {
+	@media (max-width:600px) {
+		padding-left: 0;
+	}
+} */
+
+/* .clogo>img {
+	max-width: 500px;
+	height: auto;
+	max-height: 600px;
+}
+
+@media only screen and (min-width: 468px) {
+	.clogo>img {
+		max-width: 365px;
+		height: auto;
+		max-height: 600px;
+		margin-right: 10px;
+		padding-right: 20px;
+	}
+
+} */
+
+.compufest_alert {
+	text-align: center;
+	margin: 0 50px;
+}
+
+#flyer {
+	max-width: 100%;
+	height: auto;
+	max-height: 600px"
+
+}
+
+
+
+.container1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 20px 20px 0 20px;
+}
+
+.container1 .heading1 {
+	width: 50%;
+	padding-bottom: 50px;
+}
+
+.container1 .heading1 h3 {
+	font-size: 3em;
+	font-weight: bolder;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #222;
+}
+
+.container1 .heading1 h3 span {
+	font-weight: 100;
+}
+
+.container1 .box1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.container1 .box1 .dream1 {
+	display: flex;
+	flex-direction: column;
+	width: 32.5%;
+}
+
+.container1 .box1 .dream1 img {
+	width: 100%;
+	padding-bottom: 15px;
+	border-radius: 5px;
+}
+
+@media only screen and (max-width: 769px) {
+	.container1 .box1 {
+		flex-direction: column;
+	}
+
+	.container1 .box1 .dream1 {
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 600px) and (min-width: 300px) {
+
+	/* .container1 .heading1{
+  width: 100%;
+} */
+	.container1 .heading1 .myh1 {
+		font-size: 2em;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.clogoclass {
+		max-width: 349px;
+		height: auto;
+		max-height: 600px;
+		overflow:hidden;
+	}
+}
