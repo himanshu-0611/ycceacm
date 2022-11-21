@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <head>
+  <head>
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <meta charset="utf-8" />
     <meta
@@ -24,13 +23,60 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="gallery.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
       rel="stylesheet"
     />
-</head>
-<body>
+    <style>
+      .mainImg img {
+        width: 700px;
+        height: auto;
+        /* margin: auto; */
+      }
+
+      @media screen and (max-width: 769px) {
+        .mainImg img {
+          width: 363px;
+          height: auto;
+        }
+      }
+
+      .textTdrushti {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: -40px;
+      }
+
+      .ismartimg img {
+        width: 700px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .istext {
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 5px;
+        margin-top: -50px;
+      }
+
+      @media screen and (max-width: 769px) {
+        .mainImd img {
+          width: 363px;
+          height: auto;
+        }
+
+        .ismartimg img {
+          width: 355px;
+        }
+      }
+    </style>
+  </head>
+  <body>
     <section id="navbar">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
@@ -52,7 +98,9 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About Us</a>
@@ -75,6 +123,96 @@
       </nav>
     </section>
 
+    <!-- main -->
+    <section id="banner">
+      <div class="container-fluid" id="banner-container">
+        <div class="row" id="banner-row">
+          <div class="col-md-6" id="banner-col">
+            <h3>Smart India Hackathon 2K22</h3>
+
+            <p>
+              Smart India Hackathon is a nationwide initiative to provide
+              students with a platform to solve some of the pressing problems we
+              face in our daily lives, and thus inculcate a culture of product
+              innovation and a mindset of problem-solving. The first four
+              editions SIH2017, SIH2018, SIH2019 and SIH2020 proved to be
+              extremely successful in promoting innovation out-of-the-box
+              thinking in young minds, especially engineering students from
+              across India.
+            </p>
+          </div>
+          <div class="col-md-6" id="banner-col2">
+            <!-- <div class="clogo"> -->
+            <img
+              class="img-responsive rounded mx-auto d-block clogoclass"
+              src="public/ach/sih.png"
+              alt=""
+              id="clogo"
+              style="width: 500px; height: auto"
+            />
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="service">
+      <h1 class="text-center">
+        Team Drushti - Artificial Intelligence and Data Science Branch
+      </h1>
+      <div class="container-fluid" id="service-container">
+        <!-- gallery -->
+        <div class="textTdrushti">
+          Team Drushti won Smart India Hackathon 2k22 (Hardware Edition) under
+          the Problem Statement - Development of AAC (Augmentative and
+          Alternative Communication) Software for people with different
+          disabilities
+        </div>
+        <div class="gallery">
+          <h3 class="myh1" style="text-align: center">
+            Photo <span class="myspan1">Gallery</span><br /><br />
+            <div class="mainImg">
+              <img src="public/ach/aids (5).jpg" />
+            </div>
+          </h3>
+          <div class="container1">
+            <div class="box1">
+              <div class="dream1">
+                <img src="public/ach/aids (1).jpg" />
+                <img src="public/ach/aids (2).jpg" />
+              </div>
+              <div class="dream1">
+                <img src="public/ach/aids (3).jpg" />
+                <img src="public/ach/aids (4).jpg" />
+              </div>
+              <div class="dream1">
+                <img src="public/ach/aids (6).jpg" />
+                <img src="public/ach/aids (7).jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="service">
+      <h1 class="text-center">Team iSmart - Computer Technology Branch</h1>
+      <div class="istext">
+        Team iSmart addressed the problem which gave government the ease of
+        managing teachers through one single portal which helped in maintaining
+        clear stats of teachers currently posted and hired in government
+        schools.
+      </div>
+      <div class="container-fluid" id="service-container">
+        <!-- gallery -->
+        <!-- <div class="textTdrushti">
+          Team Drushti won Smart India Hackathon 2k22 (Hardware Edition) under the Problem Statement - Development of AAC (Augmentative and Alternative Communication) Software for people with different disabilities
+        </div> -->
+        <div class="ismartimg">
+          <img src="public/ach/iSmart.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- get in touch -->
     <section id="social">
       <h1 class="text-center">Get In Touch</h1>
       <div class="d-grid gap-2 d-md-flex justify-content-center">
@@ -103,7 +241,6 @@
                 alt=""
             /></a>
           </div>
-          
         </div>
       </div>
     </section>
@@ -143,5 +280,5 @@
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
-</body>
+  </body>
 </html>
