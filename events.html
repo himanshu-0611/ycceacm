@@ -15,6 +15,8 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="style.css">
+
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
@@ -80,12 +82,78 @@
       </nav>
     </section>
 
+    <h1 class="text-center">Events Calender</h1>
+    <h4 class="twohead">(Upcoming and Past Events)</h4>
+    <div class="alert alert-primary table-alert" role="alert">Click on Event Name to Know More</div>
+
+    <table class="events-cal">
+      <tr>
+        <th>Sr.No.</th>
+        <th>Name of the Event</th>
+        <th>Event Date</th>
+      </tr>
+
+      <tr>
+        <td>1.</td>
+        <td><a href="#nlco" class="event-name">National Level Coding Olympiad</a></td>
+        <td>24/01/2022</td>
+      </tr>
+
+      <tr>
+        <td>2.</td>
+        <td><a href="#kia" class="event-name">Know-It-All</a></td>
+        <td>19/10/2022</td>
+      </tr>
+
+      <tr>
+        <td>3.</td>
+        <td><a href="#cf" class="event-name">CompuFest 2K22</a></td>
+        <td>01/09/2022 - 03/09/2022</td>
+      </tr>
+
+      <tr>
+        <td>4.</td>
+        <td><a href="#us" class="event-name">Upsurge 2K22</a></td>
+        <td>01/09/2022 - 03/09/2022</td>
+      </tr>
+    </table>
+
+    <h1 class="text-center">Upcoming Events</h1>
+
+    <section id="banner">
+      <div class="container-fluid" id="banner-container">
+        <div class="row" id="banner-row">
+          <div class="col-md-6" id="banner-col">
+            <h3 id="nlco">National Level Coding Olympiad</h3>
+
+            <p style="text-align: justify;
+            text-justify: inter-word;">
+              A National Level Coding Olympiad will be conducted by ACM-YCCE and YCCE's Codeware: Coding Club collaboratively on 24/01/2022 20:00 to 23:00 on CodeChef Platform. Attempting the test, students will know where do they stand in all over India. There are cash prizes to winners and participation certificates for all the students.
+            </p>
+          </div>
+          <div class="col-md-6" id="banner-col2">
+            <!-- <div class="clogo"> -->
+            <img
+              class="img-responsive rounded mx-auto d-block clogoclass"
+              src="public/Events/ACM.png"
+              alt=""
+              id="clogo"
+              style="width: 200px; height: auto;"
+            />
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h1 class="text-center">Past Events</h1>
+
     <!-- Know It ALL -->
     <section id="banner">
       <div class="container-fluid" id="banner-container">
         <div class="row" id="banner-row">
           <div class="col-md-6" id="banner-col">
-            <h3>Know-It-All</h3>
+            <h3 id="kia">Know-It-All</h3>
 
             <p style="text-align: justify;
             text-justify: inter-word;">
@@ -109,7 +177,7 @@
 
     <!-- services -->
     <section id="service">
-      <h1 class="text-center">Some Topics</h1>
+      <h1 class="text-center">Topics Covered</h1>
       <div class="container-fluid" id="service-container">
         <div class="row" id="banner-row">
           <div class="col-md-3" id="service-col1 flyer">
@@ -194,7 +262,7 @@
       <div class="container-fluid" id="banner-container">
         <div class="row" id="banner-row">
           <div class="col-md-6" id="banner-col">
-            <h3>Compufest 2K22</h3>
+            <h3 id="cf">COMPUFEST 2K22</h3>
 
             <p style="text-align: justify;
             text-justify: inter-word;">
@@ -387,7 +455,7 @@
       <div class="container-fluid" id="banner-container">
         <div class="row" id="banner-row">
           <div class="col-md-6" id="banner-col">
-            <h3>UPSURGE2K22</h3>
+            <h3 id="us">UPSURGE 2K22</h3>
 
             <p style="text-align: justify;
             text-justify: inter-word;">
@@ -559,7 +627,6 @@
                   </div>
               </div>
           </div>
-    <hr />
 
     <!-- social -->
     <section id="social">
