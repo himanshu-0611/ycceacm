@@ -304,3 +304,18 @@ tr:nth-child(odd) {
 	color: #0b0a3d;
 	transition: 0.3s ease-out;
 }
+
+.nlco-p>a {
+	text-decoration: none;
+	color: #0b0a3d;
+	background-color: transparent !important;
+}
+
+.nlco-p>a:hover {
+	background-color: transparent !important;
+}
+
+.nlco-download {
+	/* margin: auto; */
+	text-align: center;
+}
