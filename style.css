@@ -292,6 +292,10 @@ tr:nth-child(odd) {
 	.table-alert {
 		width: 60%;
 	}
+
+	.nlco-winner {
+		margin-left: 40px;
+	}
 }
 
 .notifi-home {
@@ -318,4 +322,12 @@ tr:nth-child(odd) {
 .nlco-download {
 	/* margin: auto; */
 	text-align: center;
+}
+
+.nlco-winner {
+	margin: auto;
+	/* width: 40rem;
+	height: 40rem; */
+	/* width: 100%; */
+	height: auto;
 }
