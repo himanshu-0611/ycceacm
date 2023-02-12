@@ -292,6 +292,10 @@ tr:nth-child(odd) {
 	.table-alert {
 		width: 60%;
 	}
+
+	.nlco-winner {
+		margin-left: 40px;
+	}
 }
 
 .notifi-home {
@@ -303,4 +307,27 @@ tr:nth-child(odd) {
 	text-shadow: 2px 2px 5px #0a3d3b;
 	color: #0b0a3d;
 	transition: 0.3s ease-out;
+}
+
+.nlco-p>a {
+	text-decoration: none;
+	color: #0b0a3d;
+	background-color: transparent !important;
+}
+
+.nlco-p>a:hover {
+	background-color: transparent !important;
+}
+
+.nlco-download {
+	/* margin: auto; */
+	text-align: center;
+}
+
+.nlco-winner {
+	margin: auto;
+	/* width: 40rem;
+	height: 40rem; */
+	/* width: 100%; */
+	height: auto;
 }
