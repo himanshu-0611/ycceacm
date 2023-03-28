@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,
-				initial-scale=1"
-    />
 
-    <link rel="icon" href="public/image/ACM-Logo.ico" />
-    <title>ACM-YCCE</title>
-    <!--=============== REMIX ICONS ===============-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,
+				initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="gallery.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <link rel="icon" href="public/image/ACM-Logo.ico" />
+  <title>ACM-YCCE</title>
+  <!--=============== REMIX ICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="gallery.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+</head>
+<style>
+  #preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fff url('https://smashinghub.com/wp-content/uploads/2014/08/cool-loading-animated-gif-4.gif') no-repeat center center;
+  }
+</style>
+
+<body>
+  <!-- <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <df-messenger
       intent="WELCOME"
       chat-title="Emitra-2"
@@ -41,205 +42,249 @@
       language-code="en"
       chat-icon="https://cdn-icons-png.flaticon.com/512/1533/1533105.png"
     ></df-messenger> -->
-    <section id="navbar">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="public/image/ACM Logo Final.png" class="nav-img" alt="" />
-            ACM-YCCE
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="events.html">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="achievement.html">Achievements</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="team.html">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#social">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </section>
-
-    <!-- banner -->
-    <section id="banner">
-      <div class="container-fluid" id="banner-container">
-        <div class="row" id="banner-row">
-          <div class="col-md-6" id="banner-col">
-            <h3>ACM-YCCE</h3>
-
-            <p style="text-align: justify; text-justify: inter-word">
-              The Association for Computing Machinery (ACM) is an international
-              learned society for computing. It was founded in 1947, and is the
-              world's largest scientific and educational computing society.
-              ACM-YCCE is a professional community established in the year 2008
-              which aims to bring awareness among people about the latest
-              technologies being introduced in the tech-world and educate them
-              about the same. ACM-YCCE also works for the upbringing of students
-              who aspire to bring a change in the society through Computer
-              Sciences by organizing international-level events regularly.
-            </p>
-          </div>
-          <div class="col-md-6" id="banner-col2">
-            <img
-              class="img-responsive rounded mx-auto d-block"
-              src="public/image/ACM Logo Final.png"
-              alt=""
-            />
-          </div>
+  <div id="preloader"></div>
+  <section id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="public/image/ACM Logo Final.png" class="nav-img" alt="" />
+          ACM-YCCE
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="achievement.html">Achievements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#social">Contact Us</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <!-- <marquee
+    </nav>
+  </section>
+
+  <!-- banner -->
+  <section id="banner">
+    <div class="container-fluid" id="banner-container"style="background-color: rgba(0, 0, 0, 0.4);">
+      <video autoplay loop muted play-inline class="bg-clip"
+        src="https://assets.mixkit.co/videos/preview/mixkit-flying-through-a-virtual-world-of-artificial-intelligence-12254-large.mp4"></video>
+      <div class="row" id="banner-row">
+        <div class="col-md-6" id="banner-col">
+          <h3>ACM-YCCE</h3>
+
+          <p style="text-align: justify; text-justify: inter-word; font-size: large !important;">
+            The Association for Computing Machinery (ACM) is an international
+            learned society for computing. It was founded in 1947, and is the
+            world's largest scientific and educational computing society.
+            ACM-YCCE is a professional community established in the year 2008 
+            by the department of Computer Technology,YCCE which is now managed by Computer Technology and Computer Science and Engineering departments collboratively
+            Since 2022. It aims to bring awareness among people about the latest
+            technologies being introduced in the tech-world and educate them
+            about the same. ACM-YCCE also works for the upbringing of students
+            who aspire to bring a change in the society through Computer
+            Sciences by organizing international-level events regularly.
+          </p>
+        </div>
+        <div class="col-md-6" id="banner-col2">
+          <img class="img-responsive rounded mx-auto d-block" src="public/image/ACM Logo Final.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- <marquee
         direction="right"
         behavior="alternate"
       >
         Upcoming Event:
         <a href="events.html#nlco" class="notifi-home">National Level Coding Oplympiad</a> on 24/01/2023 20:00 to 23:00
       </marquee> -->
-    </section>
+  </section>
 
-    <!-- services -->
-    <section id="service">
-      <h1 class="text-center">HOD's Desk</h1>
-      <div class="container-fluid" id="service-container">
+  <!-- services -->
+  <section id="service">
+    <h1 class="text-center">HOD's Desk</h1>
+    <div class="container-fluid" id="service-container">
+      <div class="row" id="banner-row">
+        <div class="col-md-6 px-5" id="service-col2">
+          <img src="public/image/rakhimam.jpg" class="img-fluid rounded mx-auto d-block i1" alt="..." width="210px"
+            style="border-radius: 10% !important; padding: 0px !important;" />
+          <h3>Dr. Rakhi Wajgi</h3>
+          <p style="text-align: justify;"> Welcome to the YCCE Student Chapter of the Association for Computing Machinery (ACM)! We department of Computer Technology having stand up of 37 years are known for dedication towards spread of quality education in the society. Being very impulsive discipline, we believe that change is the only permanent thing which make you survive for long. YCCE established ACM student chapter in 2008 and it has grown up as a Bible which spreads at global level. Under ACM student chapter we organize various international and national events, competitions, SDPs etc. ACM provides a platform for computing professionals, researchers, educators, and students to share ideas and foster collaboration. Our mission is to promote the latest advancements in computing technologies, theories, and applications.
+
+            At YCCE, we are committed to promoting diversity and inclusion in all aspects of computing. Our goal is to offer resources that help our members stay up-to-date with the latest research and industry trends. We offer a variety of educational programs, including online courses, certifications, and training programs in a wide range of computing topics, from data science to cybersecurity.
+            
+            As a student chapter, we also provide networking opportunities, mentorship, and access to resources for students interested in computing. We believe that students have the power to shape the future of computing and we are committed to helping them advance their skills and careers.
+            
+            At YCCE ACM, we are inspired by the words of Steve Jobs, who said, "I think everybody in this country should learn how to program a computer because it teaches you how to think." We believe that computing is not just a profession, but a way of thinking that can change the world.
+            
+            Join us in our mission to promote responsible use of technology for the betterment of society.
+      
+          </p>
+        </div>
+        <div class="col-md-6 px-5" id="service-col1">
+          <img src="public/image/lalit-damahe.jpg" class="img-fluid rounded mx-auto d-block i1" alt="..." width="210px"
+            style="border-radius: 10% !important; padding: 0px !important;" />
+          <h3>Dr. Lalit Damahe</h3>
+          <p style="text-align: justify;"> 
+            As the Head of Department, Deparment of Computer Science and Engineering it is my honor to welcome you to the YCCE Student Chapter of the Association for Computing Machinery (ACM). ACM is a global organization committed to advancing computing as a science and profession, and I'm thrilled that YCCE is a part of this community.
+
+At YCCE, we believe in promoting diversity and inclusion in all aspects of computing. Our aim is to provide our members with resources that help them stay up-to-date with the latest industry trends and research. We offer a variety of educational programs, including online courses, certifications, and training programs that cover a range of computing topics.
+
+As a student chapter, we provide networking opportunities, mentorship, and access to resources for students interested in computing. We believe that students have the potential to shape the future of computing, and we are dedicated to helping them advance their skills and careers.
+
+At YCCE ACM, we strongly believe in the transformative power of computing. We're inspired by the words of Grace Hopper, who famously said, "The most dangerous phrase in the language is, 'We've always done it this way.'" We're committed to exploring new ways of using technology to make a positive impact on society.
+
+I encourage all members of YCCE ACM to take full advantage of the opportunities provided by our student chapter. Let us come together to push the boundaries of computing and make a meaningful difference in the world.
+
+            </p>
+            
+        </div>
+
+        <h1 class="text-center"> Faculty Co-ordinator's Desk</h1>
+
+        <div class="col-md-6 px-5" id="service-col2">
+          <img src="public/image/supriyamam.jpg" class="img-fluid rounded mx-auto d-block i1" alt="..." width="210px"
+            style="border-radius: 10% !important; padding: 0px !important;" />
+          <h3>Supriya Thombre</h3>
+          <p style="text-align: justify;"> 
+            Dear Members of the Association for Computing Machinery (ACM),
+
+            As the faculty coordinator, I am delighted to welcome you to our dynamic community of computing professionals committed to advancing the field. We are inspired by the words of Albert Einstein, who said, "We cannot solve our problems with the same thinking we used when we created them." At ACM, we strive to think outside the box and approach challenges with fresh perspectives.
+            
+            Our community is dedicated to promoting diversity and inclusion in computing, and we offer a wealth of resources, including conferences, publications, and educational programs, to help our members stay up-to-date with the latest research and industry developments.
+            
+            As we face new opportunities and obstacles in computing, let us embrace the spirit of innovation and work towards a better future for computing. I thank you for being part of ACM and look forward to the positive impact we can make together. Let us continue to think innovatively and work towards a better future for computing.
+            
+            </p>
+        </div>
+        <div class="col-md-6 px-5" id="service-col1">
+          <img src="public/image/Pratibhamam.jpg" class="img-fluid rounded mx-auto d-block i1" alt="..." width="210px"
+            style="border-radius: 10% !important; padding: 0px !important;" />
+          <h3>Pratibha Waghale</h3>
+          <p style="text-align: justify;"> 
+            I hope this message finds you all in good health and spirits. As the Student Activity Incharge of the Department of Computer Science and Engineering, I would like to take this opportunity to express my appreciation for the hard work and dedication that you have shown towards the ACM Student Chapter at YCCE.
+
+            Over the past few years, the ACM Student Chapter has been a vibrant and active community, providing numerous opportunities for its members to enhance their knowledge and skills in the field of computer science and engineering. Through a wide range of events, workshops, and competitions, the ACM Student Chapter has fostered a culture of learning and innovation that has benefited both its members and the wider community.
+            
+            I encourage all members of the ACM Student Chapter to continue to actively participate in its activities and events, and to use this platform to broaden your horizons and develop your skills. I also encourage you to reach out to one another and to the wider community, and to share your knowledge and expertise with those who may benefit from it.
+            
+            In closing, I would like to extend my best wishes to all members of the ACM Student Chapter at YCCE. Keep up the great work, and continue to strive for excellence in all that you do.
+            </p>
+            
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- product -->
+
+  <section id="product">
+    <div class="gallery">
+      <h3 class="myh1" style="text-align: center">
+        Photo <span class="myspan1">Gallery</span>
+      </h3>
+      <div class="container1" style="overflow-x: scroll; white-space: nowrap;">
+        <div class="box1" style="display: inline-block; padding: 30px;">
+          <img src="public/homeGallery/grpPhoto.jpg" style="display: inline-block; width: 33.33%;" />
+          <img src="public/homeGallery/teachers.jpg" style="display: inline-block; width: 33.33%;" />
+          <img src="public/ach/aids (5).jpg" style="display: inline-block; width: 33.33%;" />
+          <img src="public/ach/aids (1).jpg" style="display: inline-block; width: 33.33%;" />
+          <img src="public/Events/Github/github1.jpg" style="display: inline-block; width: 33.33%;" />
+          <img src="public/ach/cse2.jpg" style="display: inline-block; width: 33.33%;" />
+          <img src="public/ach/iSmart.jpg" style="display: inline-block; width: 33.33%;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- social -->
+  <section id="social">
+    <h1 class="text-center">Get In Touch</h1>
+    <div class="d-grid gap-2 d-md-flex justify-content-center">
+      <div class="row align-items-center" id="social-row">
+        <div class="col-md-6 social-col">
+          <a href="https://www.instagram.com/acm.ycce/" target="_blank"><img
+              class="img-responsive rounded mx-auto d-block" src="public/icon/instagram-line.png" alt="" /></a>
+        </div>
+
+        <div class="col-md-6 social-col">
+          <a href="https://in.linkedin.com/company/acm-ycce" target="_blank"><img
+              class="img-responsive rounded mx-auto d-block" src="public/icon/linkedin-box-line.png" alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <section id="footer">
+    <section id="banner">
+      <div class="container-fluid" id="banner-container">
         <div class="row" id="banner-row">
-          <div class="col-md-6 px-5" id="service-col2">
-            <img
-              src="public/image/rakhimam.jpg"
-              class="img-fluid rounded mx-auto d-block i1"
-              alt="..."
-              width="210px"
-            />
-            <h3>Dr. Rakhi Wajgi</h3>
+          <div class="col-md-4" id="footer-col1">
+            <h3>Location</h3>
+            <p>
+              Yeshwantrao Chavan College of Engineering Hingna Road,
+              Wanadongri, Nagpur- 441110<br />
+              State : Maharashtra<br />
+              Country : India
+            </p>
           </div>
-          <div class="col-md-6 px-5" id="service-col1">
-            <img
-              src="public/image/lalit-damahe.jpg"
-              class="img-fluid rounded mx-auto d-block i1"
-              alt="..."
-            />
-            <h3>Dr. Lalit Damahe</h3>
+          <div class="col-md-4" id="footer-col2">
+            <h3>Contact Us</h3>
+
+            <p>Email Us- acmscycce@gmail.com</p>
           </div>
-        </div>
-      </div>
-    </section>
+          <div class="col-md-4" id="footer-col2">
+            <h3>Design & Developed by</h3>
 
-    <!-- product -->
-
-    <section id="product">
-      <div class="gallery">
-        <h3 class="myh1" style="text-align: center">
-          Photo <span class="myspan1">Gallery</span>
-        </h3>
-        <div class="container1">
-          <div class="box1">
-            <div class="dream1">
-              <img src="public/homeGallery/grpPhoto.jpg" />
-              <img src="public/ach/cse2.jpg" />
-              <img src="public/homeGallery/teachers.jpg" />
-            </div>
-            <div class="dream1">
-              <img src="public/ach/aids (5).jpg" />
-              <img src="public/ach/iSmart.jpg" />
-              <img src="public/ach/aids (1).jpg" />
-            </div>
-            <div class="dream1">
-              <img src="public/homeGallery/rob.jpg" />
-              <img src="public/Events/Github/github1.jpg" />
-            </div>
+            <p>Team ACM-YCCE</p>
           </div>
         </div>
       </div>
     </section>
+  </section>
 
-    <hr />
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- social -->
-    <section id="social">
-      <h1 class="text-center">Get In Touch</h1>
-      <div class="d-grid gap-2 d-md-flex justify-content-center">
-        <div class="row align-items-center" id="social-row">
-          <div class="col-md-6 social-col">
-            <a href="https://www.instagram.com/acm.ycce/" target="_blank"
-              ><img
-                class="img-responsive rounded mx-auto d-block"
-                src="public/icon/instagram-line.png"
-                alt=""
-            /></a>
-          </div>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <script>
+    // Get the preloader element
+    var preloader = document.getElementById("preloader");
+    var sahil=0;
+    // Hide the preloader after a delay of 3 seconds, or when the website content has loaded
+    setTimeout(function(){
+        preloader.style.display = "none";
+        sahil=1;
+    }, 2000);
 
-          <div class="col-md-6 social-col">
-            <a href="https://in.linkedin.com/company/acm-ycce" target="_blank"
-              ><img
-                class="img-responsive rounded mx-auto d-block"
-                src="public/icon/linkedin-box-line.png"
-                alt=""
-            /></a>
-          </div>
-        </div>
-      </div>
-    </section>
+    // Hide the preloader after the website content has loaded
+    if (sahil==1) {
+    window.addEventListener("load", function () {
+      preloader.style.display = "none";
+    });
+  }
+  </script>
+</body>
 
-    <!-- footer -->
-    <section id="footer">
-      <section id="banner">
-        <div class="container-fluid" id="banner-container">
-          <div class="row" id="banner-row">
-            <div class="col-md-4" id="footer-col1">
-              <h3>Location</h3>
-              <p>
-                Yeshwantrao Chavan College of Engineering Hingna Road,
-                Wanadongri, Nagpur- 441110<br />
-                State : Maharashtra<br />
-                Country : India
-              </p>
-            </div>
-            <div class="col-md-4" id="footer-col2">
-              <h3>Contact Us</h3>
-
-              <p>Email Us- acmscycce@gmail.com</p>
-            </div>
-            <div class="col-md-4" id="footer-col2">
-              <h3>Design & Developed by</h3>
-
-              <p>Team ACM-YCCE</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
