@@ -557,6 +557,20 @@ tr:nth-child(odd) {
 		font-size: 14px;
 		margin: 0;
 	}
+		.col-lg-6 {
+			position: relative;
+			padding-bottom: 56.25%;
+			height: 0;
+			overflow: hidden;
+		}
+	
+		.col-lg-6 iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
 }
 
 /* image is in a div tag in events.html and rmeoved from here because it was showing up on every page  */
@@ -578,6 +592,3 @@ tr:nth-child(odd) {
 		}
 } */
 
-.ycce-gate-img {
-
-}
