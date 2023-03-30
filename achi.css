@@ -1,7 +1,11 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "Roboto Condensed", sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+ 
+p {
+    font-size: large;
 }
 
 /* navbar */
@@ -42,10 +46,10 @@
 #banner-container {
 	background-color: #0a193d;
 	color: white !important;
-	/* padding-top: 60px; */
-	padding-bottom: 32px;
-}
+	padding-top: 40px;
+	padding-bottom: 40px;
 
+}
 @media only screen and (max-width: 987px) {
 	#banner-container {
 		padding-bottom: 0px;
@@ -60,22 +64,23 @@
 	height: 600px;
 	object-fit: cover;
 	z-index: -1;
-}
+  }
 
-@media only screen and (max-width: 987px) {
+  @media only screen and (max-width: 987px) {
 	#banner-container {
 		padding-bottom: 0px;
+        padding-top: 0px;
 	}
-
 	.bg-clip {
-		height: 1026px;
+		height: 990px;
 	}
 }
 
-#banner-container2 {
+#banner-container2{
 	padding-top: 60px;
 	padding-bottom: 80px;
 	color: #0a193d;
+
 }
 
 #banner-row img {
@@ -85,25 +90,11 @@
 	padding-left: 30px;
 }
 
-
 #banner-row h3,
 p {
 	/* padding-left: 20px; */
 	padding-top: 20px;
 	text-align: center;
-}
-
-@media (max-width:780px) {
-	#banner-row img {
-		margin-top: 0px;
-	}
-
-	#banner-row h3,
-	p {
-		/* padding-left: 20px; */
-		margin-left: 5px;
-		margin-right: 14px;
-	}
 }
 
 #banner-row a {
@@ -112,17 +103,19 @@ p {
 	border: none;
 	margin-left: 20px;
 	margin-top: 20px;
+
 }
 
 #banner-col {
 	padding-left: 20px;
-	margin-top: 35px;
 }
+
+
 
 /* service */
 #service {
-	padding-top: 80px;
-	padding-bottom: 50px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 #service h1 {
@@ -151,6 +144,7 @@ p {
 
 #about-col ul li {
 	padding-top: 15px;
+
 }
 
 /* product */
@@ -195,7 +189,9 @@ p {
 
 .mb-3 {
 	padding-top: 10px;
+	
 }
+
 
 /* media */
 @media only screen and (max-width: 987px) {
@@ -212,7 +208,9 @@ p {
 	.social-col {
 		width: 33%;
 	}
+
 }
+
 
 .row1 {
 	display: -ms-flexbox;
@@ -268,19 +266,16 @@ p {
 
 @media screen and (max-width: 600px) {
 	.p-yaacm {
-		margin-left: 24px;
+		margin-left: -154px;
 		padding-left: 15px;
 		padding-right: 15px;
 	}
 
 	.a-acm {
 		margin-left: 32px;
-		width: 310px;
+		width: 349px;
 		/* padding-left: 15px;
-		  padding-right: 15px; */
-	}
-	.a-ycce{
-		padding-left: 0px
+		padding-right: 15px; */
 	}
 }
 
@@ -288,8 +283,10 @@ p {
 	margin: auto;
 	text-align: center;
 	overflow-x: auto;
-	width: 700px;
+	
 }
+
+
 
 th,
 tr {
@@ -320,20 +317,16 @@ tr:nth-child(odd) {
 	color: #0a193d;
 }
 
-
 .event-name:hover {
 	text-shadow: 2px 2px 5px #0a3d3b;
 	color: #0b0a3d;
 	transition: 0.3s ease-out;
 }
-
-.event-1 {
-	padding: 20px;
-	/* padding-left: 20px;
-	padding-right: 20px; */
-	width: 90%;
-	margin: auto;
+.event-1{
+	padding: 5px;
 	text-align: center;
+	width: 35%;
+	margin: auto;
 	display: flex;
 	flex-direction: column;
 	text-decoration: none;
@@ -341,8 +334,8 @@ tr:nth-child(odd) {
 	color: #0a193d;
 }
 
-#eventscal {
-	width: 70vh;
+#eventscal{
+	width:70vh;
 }
 
 .event-1:hover {
@@ -351,12 +344,14 @@ tr:nth-child(odd) {
 	transition: 0.3s ease-out;
 }
 
+
 .table-alert {
 	margin: 5px;
 	text-align: center;
 	width: 35%;
 	margin: auto;
 }
+
 
 @media screen and (max-width: 600px) {
 	.table-alert {
@@ -365,10 +360,6 @@ tr:nth-child(odd) {
 
 	.nlco-winner {
 		margin-left: 40px;
-	}
-
-	#eventscal {
-		width: 30vh;
 	}
 }
 
@@ -401,183 +392,14 @@ tr:nth-child(odd) {
 .nlco-winner {
 	margin: auto;
 	/* width: 40rem;
-	  height: 40rem; */
+	height: 40rem; */
 	/* width: 100%; */
 	height: auto;
 }
 
-#carouselExampleIndicators {
-	margin-left: 500px;
-	margin-right: 500px;
-	margin-top: 100px;
-}
-
-
-/* carousel */
-.carousel-inner {
-	border-top: 100px;
-	border-left: 120px;
-	border-right: 120px;
-	border-bottom: 00px;
-	border-color: #fff;
-	border-style: solid;
-	width: 800px;
-}
-
-.carousel-inner>.item>img,
-.carousel-inner>.item>a>img {
-	width: 140px;
-	height: 160px;
-}
-
-.carousel-control-prev {
-	position: relative;
-
-}
-
-.carousel-control-prev-icon {
-	position: absolute;
-	left: 25.5rem;
-
-}
-
-.carousel-control-next {
-	position: relative;
-
-}
-
-.carousel-control-next-icon {
-	position: absolute;
-	right: 25.5rem;
-}
-
-.hello {
-	width: 1200px;
-	margin: auto;
-}
-
-@media (max-width:780px) {
-	.carousel-inner {
-		border-top: 10px;
-		border-left: 20px;
-		border-right: 20px;
-		border-bottom: 00px;
-	}
-
-	.carousel-control-prev-icon {
-		position: absolute;
-		left: 3.5rem;
-
-	}
-
-	.carousel-control-next-icon {
-		position: absolute;
-		right: 3.5rem;
-	}
-
-	.hello {
-		width: 100%;
-	}
-}
-
-
-/* event calender */
-.events-calender {
-	width: 100%;
-	margin-top: 100px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.events-calender h1 {
-	font-size: 50px;
-}
-
-.events-calender h4 {
-	margin: 1% 0 3% 0;
-}
-
-.events-link {
-	margin-top: 3%;
-	/* display: flex; */
-	justify-content: center;
-}
-
-.events-link a {
-	background: #0a193d;
-	font-size: 30px;
-	color: #fff;
-	padding: 10px;
-	text-decoration: none;
-	border-radius: 10px;
-}
-
-.events-link a:hover {
-	transform: scale(1.6);
-	background: white;
-	color: #0a193d;
-	transition: ease-out 0.2s;
-	border: 1px solid #0a193d;
-	text-shadow: 2px 2px 5px #103c3a;
-}
-
-@media (max-width: 768px) {
-	.events-calender {
-		margin-top: 10%;
-		flex-direction: column;
-	}
-
-	.events-link {
-		justify-content: center;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.events-link a {
-		font-size: 16px;
-		padding: 10px;
-		margin-left: 0;
-	}
-
-	.events-link div {
-		margin-top: 30px;
-	}
-
-	.events-calender h1 {
-		font-size: 36px;
-	}
-
-	.events-calender h2 {
-		font-size: 25px;
-	}
-
-	.events-calender h4 {
-		font-size: 14px;
-		margin: 0;
-	}
-}
-
-/* image is in a div tag in events.html and rmeoved from here because it was showing up on every page  */
-/* body{
-	background: url("./19007.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-  }
-   */
-
-.acmlogo {
-	margin-top: 110px;
-}
-
-/* @media (max-width:780px) {
-	.acmlogo {
-			margin-top: 110px;
-		}
-} */
-
-.ycce-gate-img {
+#carouselExampleIndicators{
+margin-left:500px;
+margin-right: 500px;
+margin-top:100px;
 
 }
