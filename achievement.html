@@ -1,327 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,
-				initial-scale=1"
-    />
 
-    <link rel="icon" href="public/image/ACM-Logo.ico">
+<head>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,
+				initial-scale=1" />
 
-    <title>Achievements</title>
+  <link rel="icon" href="public/image/ACM-Logo.ico">
 
-    <!--=============== REMIX ICONS ===============-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+  <title>Achievements</title>
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="gallery.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
-      rel="stylesheet"
-    />
-    <style>
+  <!--=============== REMIX ICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+  <link rel="stylesheet" href="achi.css" />
+  <link rel="stylesheet" href="gallery.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+  <style>
+    .mainImg img {
+      width: 700px;
+      height: auto;
+      transition: transform 0.2s;
+      /* margin: auto; */
+    }
+
+    .mainImg img:hover {
+      transform: scale(1.2);
+    }
+
+    @media screen and (max-width: 769px) {
       .mainImg img {
-        width: 700px;
+        width: 363px;
         height: auto;
-        /* margin: auto; */
       }
+    }
 
-      @media screen and (max-width: 769px) {
-        .mainImg img {
-          width: 363px;
-          height: auto;
-        }
-      }
+    .textTdrushti {
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: -40px;
+      font-size: large;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
 
-      .textTdrushti {
-        text-align: center;
-        margin-bottom: 20px;
-        margin-top: -40px;
+    .ismartimg img {
+      width: 700px;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .istext {
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 5px;
+      margin-top: -50px;
+    }
+
+    @media screen and (max-width: 769px) {
+      .mainImd img {
+        width: 363px;
+        height: auto;
       }
 
       .ismartimg img {
-        width: 700px;
-        height: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        width: 355px;
       }
+    }
 
-      .istext {
-        text-align: center;
-        margin-bottom: 20px;
-        padding: 5px;
-        margin-top: -50px;
-      }
+    .ismarthead {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
 
-      @media screen and (max-width: 769px) {
-        .mainImd img {
-          width: 363px;
-          height: auto;
-        }
+    @keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+  </style>
+</head>
 
-        .ismartimg img {
-          width: 355px;
-        }
-      }
-
-      .ismarthead {
-        padding-left: 8px;
-        padding-right: 8px;
-      }
-    </style>
-  </head>
-  <body>
-    <section id="navbar">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="public/image/ACM Logo Final.png" class="nav-img" alt="" />
-            ACM-YCCE
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="events.html">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="achievement.html">Achievements</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="team.html">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#social">Contact Us</a>
-              </li>
-            </ul>
-          </div>
+<body>
+  
+  <section id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="public/image/ACM Logo Final.png" class="nav-img" alt="" />
+          ACM-YCCE
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="achievement.html">Achievements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="mailto:acmscycce@gmail.com">Contact Us</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </section>
+      </div>
+    </nav>
+  </section>
 
-    <!-- main -->
+  <!-- main -->
+
+  <section id="banner">
+    <div class="container-fluid" id="banner-container">
+      <div class="row" id="banner-row">
+        <div class="col-md-6" id="banner-col">
+          <h3>Code by the Beach</h3>
+          <p>
+            This is hackathon is a 48our-h event consisting of talks, API demo sessions, socializing sessions and of
+            course a 36-hour hacking session. The initial 6 hours will consist of talks and API demo sessions after
+            which hacking starts. The 36 hours hacking session will be followed by an evaluation of every team’s hack by
+            a panel of judges. The panel will decide the top-3 teams which will be announced at the spot.
+          </p>
+        </div>
+        <div class="col-md-6" id="banner-col2">
+          <!-- <div class="clogo"> -->
+            <img class="img-responsive rounded mx-auto d-block clogoclass" src="public/ach/bit.jpg" alt="" id="clogo"
+            style="width: 500px; height: auto; 
+            transition: transform 0.2s; 
+            transform-origin: center center;
+            animation: slide-in 1s ease-out forwards;" onmouseover="this.style.transform='scale(1.2)';" onmouseout="this.style.transform='scale(1)';">
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="service">
+    <h1 class="text-center">
+      <pre style="font-family: 'Roboto Condensed', sans-serif;">Web Warriors
+ Artificial Intelligence and Data Science YCCE</pre>
+    </h1>
+    <div class="container-fluid" id="service-container">
+      <!-- gallery -->
+      <div class="textTdrushti">
+        The project was a web app that utilized a supervised machine-learning model with a 65% accuracy rate, developed
+        in under 48 hours. The primary technologies used were Django, HTML, and various Python libraries. Django
+        provided a quick and efficient development framework, while HTML enabled a user-friendly front-end interface.
+        Python libraries were utilized to optimize the machine-learning model. Despite the limited timeframe, the
+        development team leveraged their expertise to create a functional and accurate product.
+      </div>
+      <br>
+    </div>
+  </section>
+
+  <section id="banner">
+    <div class="container-fluid" id="banner-container">
+      <div class="row" id="banner-row">
+        <div class="col-md-6" id="banner-col">
+          <h3>Smart India Hackathon 2K22</h3>
+
+          <p>
+            Smart India Hackathon is a nationwide initiative to provide
+            students with a platform to solve some of the pressing problems we
+            face in our daily lives, and thus inculcate a culture of product
+            innovation and a mindset of problem-solving. The first four
+            editions SIH2017, SIH2018, SIH2019 and SIH2020 proved to be
+            extremely successful in promoting innovation out-of-the-box
+            thinking in young minds, especially engineering students from
+            across India.
+          </p>
+        </div>
+        <div class="col-md-6" id="banner-col2">
+          <!-- <div class="clogo"> -->
+            <img class="img-responsive rounded mx-auto d-block clogoclass" 
+src="public/ach/sih.png" 
+alt="" 
+id="clogo" 
+style="width: 500px; height: auto; 
+transition: transform 0.2s; 
+transform-origin: center center;
+transform: scale(1);"
+onmouseover="this.style.transform='scale(1.2)';"
+onmouseout="this.style.transform='scale(1)';">
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="service">
+    <h1 class="text-center">
+      <pre style="font-family: 'Roboto Condensed', sans-serif;">Team Drushti
+ Artificial Intelligence and Data Science YCCE</pre>
+    </h1>
+    <div class="container-fluid" id="service-container">
+      <!-- gallery -->
+      <div class="textTdrushti">
+        The Team Drishti from YCCE bagged 1st position in Smart India Hackethon, hosted
+        by Ministry of Education, which was held at Forge Accelerator Tamilnadu,
+        Coimbatore, and The Team won cash prize of Rs. 2,00,000/-. The team members
+        were - Aman Raut, Gagan Loya, Viranchi Dakhare, Valhari Meshram, Atharva
+        Nerkar, and Vedant Birewar. Under the valuable guidance of Dr. Rakhi Wajgi, Head
+        of Department, and the faculties, Prof. Nikhil Magrulkar and Prof. Praful Barekar,
+        the team developed a software for AAC for person with different disabilities, using
+        B²MJ (Beyond Braille Mobility Jacket) approach. With complete enthusiasm, all the
+        team members gave their best and made the department proud
+      </div>
+      <br>
+      <div class="gallery">
+        <h3 class="myh1" style="text-align: center">
+          <div class="mainImg">
+            <img src="public/ach/aids (5).jpg" />
+          </div>
+        </h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="service">
+    <h1 class="text-center">
+      Team Elite Cseian - Computer Science & Engineering Branch
+    </h1>
+    <div class="container-fluid" id="service-container">
+      <!-- gallery -->
+      <div class="textTdrushti">
+        Team Elite Cseian developed a solution for real-time tracking of students' academic progress and learning
+        outcomes across multiple schools. Their solution enabled teachers and administrators to monitor and analyze
+        students' performance using data analytics tools and techniques. By utilizing this solution, teachers could
+        easily identify students who needed extra attention or support and provide them with personalized learning
+        opportunities. The system also enabled parents to track their child's academic progress in real-time, fostering
+        transparency and accountability. Overall, Team Elite Cseian's solution provided an effective and practical means
+        of addressing the challenges faced by educators in monitoring and improving student outcomes, ultimately
+        improving the overall quality of education.
+      </div>
+      <br>
+      <div class="gallery">
+        <h3 class="myh1" style="text-align: center">
+          <div class="mainImg">
+            <img src="public/ach/cse2.jpg" />
+          </div>
+        </h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="service">
+    <h1 class="text-center ismarthead">Team iSmart - Computer Technology Branch</h1>
+    <div class="textTdrushti">
+      Team iSmart developed a solution to address the challenges faced by the government in managing teachers in
+      government schools. The team created a single portal that enabled the government to easily oversee and manage the
+      hiring and posting of teachers. The portal provided clear statistics and data on the current status of teachers,
+      creating a centralized database of information that streamlined decision-making and improved teacher management.
+      By implementing this solution, the government was able to efficiently manage its teaching staff, reducing the
+      likelihood of errors and inconsistencies. Team iSmart's solution provided an effective and practical means of
+      addressing the issues faced by the government in managing its teachers, ultimately improving the education system
+      in government schools.
+    </div>
+    <br>
+    <div class="gallery">
+      <h3 class="myh1" style="text-align: center">
+        <div class="mainImg">
+          <img src="public/ach/iSmart.jpg" />
+        </div>
+      </h3>
+    </div>
+  </section>
+
+ 
+
+</main><!-- End #main -->
+
+
+  <!-- footer -->
+  <section id="footer">
     <section id="banner">
       <div class="container-fluid" id="banner-container">
         <div class="row" id="banner-row">
-          <div class="col-md-6" id="banner-col">
-            <h3>Smart India Hackathon 2K22</h3>
-
-            <p>
-              Smart India Hackathon is a nationwide initiative to provide
-              students with a platform to solve some of the pressing problems we
-              face in our daily lives, and thus inculcate a culture of product
-              innovation and a mindset of problem-solving. The first four
-              editions SIH2017, SIH2018, SIH2019 and SIH2020 proved to be
-              extremely successful in promoting innovation out-of-the-box
-              thinking in young minds, especially engineering students from
-              across India.
-            </p>
+          <div class="col-md-4" id="footer-col1">
+            <h3>Location</h3>
+            <p>Yeshwantrao Chavan College of Engineering
+              Hingna Road, Wanadongri, Nagpur- 441110<br>
+              State : Maharashtra<br>
+              Country : India</p>
           </div>
-          <div class="col-md-6" id="banner-col2">
-            <!-- <div class="clogo"> -->
-            <img
-              class="img-responsive rounded mx-auto d-block clogoclass"
-              src="public/ach/sih.png"
-              alt=""
-              id="clogo"
-              style="width: 500px; height: auto"
-            />
-            <!-- </div> -->
+          <div class="col-md-4" id="footer-col2">
+            <h3>Contact Us</h3>
+
+            <p>Email Us- acmscycce@gmail.com</p>
+
+
+          </div>
+          <div class="col-md-4" id="footer-col2">
+            <h3>Design & Developed by</h3>
+
+            <p>Team ACM-YCCE</p>
+
+
           </div>
         </div>
       </div>
     </section>
-    <section id="service">
-      <h1 class="text-center">
-        Team Drushti - Artificial Intelligence and Data Science Branch
-      </h1>
-      <div class="container-fluid" id="service-container">
-        <!-- gallery -->
-        <div class="textTdrushti">
-          Team Drushti won Smart India Hackathon 2k22 (Hardware Edition) under
-          the Problem Statement - Development of AAC (Augmentative and
-          Alternative Communication) Software for people with different
-          disabilities
-        </div>
-        <div class="gallery">
-          <h3 class="myh1" style="text-align: center">
-            Photo <span class="myspan1">Gallery</span><br /><br />
-            <div class="mainImg">
-              <img src="public/ach/aids (5).jpg" />
-            </div>
-          </h3>
-          <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <div class="dream1">
-                <img src="public/ach/aids (1).jpg" />
-                <img src="public/ach/aids (2).jpg" />
-              </div>
-              <div class="dream1">
-                <img src="public/ach/aids (3).jpg" />
-                <img src="public/ach/aids (4).jpg" />
-              </div>
-              <div class="dream1">
-                <img src="public/ach/aids (6).jpg" />
-                <img src="public/ach/aids (7).jpg" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  </section>
 
-    <section id="service">
-      <h1 class="text-center">
-        Team Elite Cseian - Computer Science & Engineering Branch
-      </h1>
-      <div class="container-fluid" id="service-container">
-        <!-- gallery -->
-        <div class="textTdrushti">
-          Team Elite Cseian provided a solution for Real Time tracking of Students  Learning's outcomesand their Academic Progress across Schools.
-        </div>
-        <div class="gallery">
-          <h3 class="myh1" style="text-align: center">
-            Photo <span class="myspan1">Gallery</span><br /><br />
-            <div class="mainImg">
-              <img src="public/ach/cse2.jpg" />
-            </div>
-          </h3>
-          <div class="container1">
-            <div class="box1">
-              <div class="dream1">
-                <img src="public/ach\/cse1.jpg" />
-                <img src="public/ach/cse3.jpg" />
-              </div>
-              <div class="dream1">
-                <img src="public/ach/cse4.jpg" />
-                <img src="public/ach/cse5.jpg" />
-              </div>
-              <div class="dream1">
-                <img src="public/ach/cse6.jpg" />
-                <img src="public/ach/cse7.jpg" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <section id="service">
-      <h1 class="text-center ismarthead">Team iSmart - Computer Technology Branch</h1>
-      <div class="istext">
-        Team iSmart addressed the problem which gave government the ease of
-        managing teachers through one single portal which helped in maintaining
-        clear stats of teachers currently posted and hired in government
-        schools.
-      </div>
-      <div class="container-fluid" id="service-container">
-        <!-- gallery -->
-        <!-- <div class="textTdrushti">
-          Team Drushti won Smart India Hackathon 2k22 (Hardware Edition) under the Problem Statement - Development of AAC (Augmentative and Alternative Communication) Software for people with different disabilities
-        </div> -->
-        <div class="ismartimg">
-          <img src="public/ach/iSmart.jpg" alt="" />
-        </div>
-      </div>
-    </section>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+</body>
 
-    <!-- get in touch -->
-    <section id="social">
-      <h1 class="text-center">Get In Touch</h1>
-      <div class="d-grid gap-2 d-md-flex justify-content-center">
-        <div class="row align-items-center" id="social-row">
-          <div class="col-md-6 social-col">
-            <a href="https://www.instagram.com/acm.ycce/" target="_blank"
-              ><img
-                class="img-responsive rounded mx-auto d-block"
-                src="public/icon/instagram-line.png"
-                alt=""
-            /></a>
-          </div>
-          
-          <div class="col-md-6 social-col">
-            <a href="https://in.linkedin.com/company/acm-ycce" target="_blank"
-              ><img
-                class="img-responsive rounded mx-auto d-block"
-                src="public/icon/linkedin-box-line.png"
-                alt=""
-            /></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- footer -->
-    <section id="footer">
-      <section id="banner">
-        <div class="container-fluid" id="banner-container">
-          <div class="row" id="banner-row">
-            <div class="col-md-4" id="footer-col1">
-              <h3>Location</h3>
-              <p>Yeshwantrao Chavan College of Engineering
-                Hingna Road, Wanadongri, Nagpur- 441110<br>
-                State : Maharashtra<br>
-                Country : India</p>
-            </div>
-            <div class="col-md-4" id="footer-col2">
-              <h3>Contact Us</h3>
-
-              <p>Email Us- acmscycce@gmail.com</p>
-
-              
-            </div>
-            <div class="col-md-4" id="footer-col2">
-              <h3>Design & Developed by</h3>
-
-              <p>Team ACM-YCCE</p>
-
-              
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
