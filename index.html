@@ -20,9 +20,20 @@
   <link rel="stylesheet" href="gallery.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
 </head>
 <style>
-    /* priyakriplani */
+    .carousel-item img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+    .carousel {
+      max-width: 1000px; /* set the maximum width of the carousel */
+      margin: auto;
+      /* background-color: red; */
+    }
     .bxl-twitter:before {
         content: "\e982";
       }
@@ -391,9 +402,8 @@ I encourage all members of YCCE ACM to take full advantage of the opportunities 
 
   <!-- product -->
 
-  
-
   <section id="product">
+    
     <!-- <div class="gallery">
       <h3 class="myh1" style="text-align: center">
         Photo <span class="myspan1">Gallery</span>
@@ -409,72 +419,135 @@ I encourage all members of YCCE ACM to take full advantage of the opportunities 
           <img src="public/ach/iSmart.jpg" style="display: inline-block; width: 33.33%;" />
         </div>
       </div>
+    </div> -->
+    <!-- Carousel -->
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+		
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+			<li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+			<li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+			<li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+			<li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+			<li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
+			<li data-bs-target="#myCarousel" data-bs-slide-to="6"></li>
+			<li data-bs-target="#myCarousel" data-bs-slide-to="7"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="public/img/compufest(12).jpg" alt="Slide 1">
+			</div>
+			<div class="carousel-item">
+				<img src="public/homeGallery/teachers.jpg" alt="Slide 2">
+			</div>
+			<div class="carousel-item">
+				<img src="public/ach/aids (5).jpg" alt="Slide 3">
+			</div>
+			<div class="carousel-item">
+				<img src="public/ach/aids (1).jpg" alt="Slide 4">
+			</div>
+			<div class="carousel-item">
+				<img src="public/Events/Github/github1.jpg" alt="Slide 5">
+			</div>
+			<div class="carousel-item">
+				<img src="public/ach/cse2.jpg" alt="Slide 6">
+			</div>
+			<div class="carousel-item">
+				<img src="public/ach/iSmart.jpg" alt="Slide 7">
+			</div>
+			<div class="carousel-item">
+				<img src="public/homeGallery/img2.jpg" alt="Slide 8">
+			</div>
+		</div>
+
+		<!-- Left and right controls -->
+		<a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</a>
+
+	</div>
+<!-- <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="8"></button>
+  </div>
+
+  <div class="hello" >
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="public/img/compufest(12).jpg" alt="Los Angeles" class="d-block w-100">
     </div>
+    <div class="carousel-item">
+      <img src="public/homeGallery/teachers.jpg" alt="Chicago" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="public/ach/aids (5).jpg" alt="New York" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="public/ach/aids (1).jpg" alt="" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="public/Events/Github/github1.jpg" alt="" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="public/ach/cse2.jpg" alt="" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="public/ach/iSmart.jpg" alt="" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="public/homeGallery/img2.jpg" alt="" class="d-block w-100">
+    </div>
+  </div>
+</div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div> -->
+
+
   </section>
-</div>
- -->
-<!-- Carousel -->
-<h3 class="myh1" style="text-align: center">
-    Photo <span class="myspan1">Gallery</span>
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-<!-- Indicators/dots -->
-<div class="carousel-indicators">
-<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-<button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-<button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-<button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-<button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
-<button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
-<button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
-<button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
-<button type="button" data-bs-target="#demo" data-bs-slide-to="8"></button>
-<button type="button" data-bs-target="#demo" data-bs-slide-to="8"></button>
-</div>
-
-<!-- The slideshow/carousel -->
-<div id="ci" class="carousel-inner">
-<div class="carousel-item active">
-  <img src="public/homeGallery/grpPhoto.jpg" alt="Los Angeles" class="d-block w-100">
-</div>
-<div class="carousel-item">
-  <img src="public/homeGallery/teachers.jpg" alt="Chicago" class="d-block w-100">
-</div>
-<div class="carousel-item">
-  <img src="public/ach/aids (5).jpg" alt="New York" class="d-block w-100">
-</div>
-<div class="carousel-item">
-  <img src="public/ach/aids (1).jpg" alt="" class="d-block w-100">
-</div>
-<div class="carousel-item">
-  <img src="public/Events/Github/github1.jpg" alt="" class="d-block w-100">
-</div>
-<div class="carousel-item">
-  <img src="public/ach/cse2.jpg" alt="" class="d-block w-100">
-</div>
-<div class="carousel-item">
-  <img src="public/ach/iSmart.jpg" alt="" class="d-block w-100">
-</div>
-<div class="carousel-item">
-  <img src="public/homeGallery/img2.jpg" alt="" class="d-block w-100">
-</div>
-<div class="carousel-item">
-  <img src="public/img/compufest (8)(1).jpg" alt="" class="d-block w-100">
-</div>
-</div>
-
-<!-- Left and right controls/icons -->
-<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-<span class="carousel-control-prev-icon"></span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-<span class="carousel-control-next-icon"></span>
-</button>
-</div>
-</section>
 
   <hr />
-
+<!-- public/img/compufest(12).jpg" a
+carousel-item active">
+public/homeGallery/grpPhoto.jpg
+carousel-item">
+public/homeGallery/teachers.jpg
+carousel-item">
+public/ach/aids (5).jpg" alt="N
+carousel-item">
+public/ach/aids (1).jpg" alt=""
+carousel-item">
+public/Events/Github/github1.jp
+carousel-item">
+public/ach/cse2.jpg" alt="" cla
+carousel-item">
+public/ach/iSmart.jpg" alt="" c
+carousel-item">
+public/homeGallery/img2.jpg" al
+ass="carousel-item">
+public/img/compufest (8)(1).jpg -->
 
   
   <section id="contact" class="contact">
@@ -689,6 +762,10 @@ I encourage all members of YCCE ACM to take full advantage of the opportunities 
     }
   }
   </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
