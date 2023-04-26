@@ -140,6 +140,10 @@ p {
 	text-align: center;
 }
 
+.team-details h3,p{
+	padding-top: 20px;
+	text-align: center;
+}
 @media (max-width:780px) {
 	#banner-row img {
 		margin-top: 0px;
@@ -360,6 +364,7 @@ tr:nth-child(odd) {
 
 .text-center {
 	margin-top: 25px;
+
 }
 
 .twohead {
@@ -392,7 +397,25 @@ tr:nth-child(odd) {
 	font-size: larger;
 	color: #0a193d;
 }
+.event-2 {
+	padding: 40px;
+	width: 90%;
+	margin: auto;
+	text-align: center; 
+	text-decoration: none;
+	font-size: larger;
+	color: #0a193d;
+}
+.national-calendar{
+	padding:15px;
+	
+}
 
+.national-calendar:hover{
+	text-shadow: 2px 2px 5px #0a3d3b;
+	color: #0b0a3d;
+	transition: 0.3s ease-out;
+}
 #eventscal {
 	width: 70vh;
 }
@@ -402,6 +425,12 @@ tr:nth-child(odd) {
 	color: #0b0a3d;
 	transition: 0.3s ease-out;
 }
+.event-2:hover {
+	text-shadow: 2px 2px 5px #0a3d3b;
+	color: #0b0a3d;
+	transition: 0.3s ease-out;
+}
+
 
 .table-alert {
 	margin: 5px;
