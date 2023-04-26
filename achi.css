@@ -96,6 +96,10 @@ p {
 	padding-top: 20px;
 	text-align: center;
 }
+.team-details h3,p{
+	padding-top: 20px;
+	text-align: center;
+}
 
 #banner-row a {
 	background-color: white !important;
