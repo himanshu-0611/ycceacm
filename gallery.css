@@ -72,3 +72,14 @@
 
 }
 
+li:hover .sub_menu {
+    display: block;
+}
+
+.sub_menu a:hover {
+    background-color: #A4A4A4;
+}
+
+li:hover, li a:hover {
+    background-color: #A4A4A4;
+}
