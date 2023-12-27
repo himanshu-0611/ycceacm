@@ -4,6 +4,13 @@
 	font-family: "Roboto Condensed", sans-serif;
 }
 
+.main-foot {
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
    
 /* navbar */
 
@@ -77,6 +84,24 @@
 	animation-fill-mode: forwards;
   } */
 /* banner */
+
+.blink {
+	animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
 
 #banner-container {
 	background-color: #0a193d;
@@ -671,3 +696,12 @@ tr:nth-child(odd) {
 		}
 } */
 
+
+.day-card{
+	display: flex;
+	justify-content: space-around;
+}
+.card-body{
+	background-color: #0a193d;
+	color: white;
+}
